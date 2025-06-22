@@ -55,7 +55,7 @@ pipeline {
         }
         stage('Deploy artifact to s3'){
             steps {
-                sh 'aws s3 cp target/*.war s3://botopython27811234 /terraform'
+                sh 'aws s3 cp target/*.war s3://botopython27811234/terraform'
             }
         }
 
